@@ -4,16 +4,18 @@ using UnityEngine;
 
 public class Destroy : MonoBehaviour
 {
-    public float life = 1f;
-    private void Awake()
+    public GameObject collider1;
+    public float life = 10f;
+    
+    public void OnCollisionEnter(Collision obj)
     {
-        Destroy(gameObject, life);
- 
+        if (obj.transform.tag == "Obstacle")
+            Destroy(collider1, 1);
+    }
+    private void Delete()
+    {
+        Destroy(collider1, life);
+
     }
 
-   /* private void OnCollisionEnter(Collision collision)
-    {
-        Destroy(collision.gameObject);
-        Destroy(gameObject);
-    }*/
 }
