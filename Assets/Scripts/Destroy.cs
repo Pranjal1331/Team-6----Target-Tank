@@ -5,17 +5,27 @@ using UnityEngine;
 public class Destroy : MonoBehaviour
 {
     public GameObject collider1;
-    public float life = 10f;
-    
+    //public GameObject collider2;
+    public float life = 5f;
+   // public int enemylife;
+    //public int damage;
     public void OnCollisionEnter(Collision obj)
     {
         if (obj.transform.tag == "Obstacle")
-            Destroy(collider1, 1);
-    }
-    private void Delete()
-    {
-        Destroy(collider1, life);
+        {   
 
+            Destroy(collider1);
+            
+            
+        }
+        else if (obj.transform.tag == "Ground")
+            Destroy(collider1, 0.5f);
+
+
+        
+        
     }
 
+    
+    
 }

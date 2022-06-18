@@ -5,10 +5,7 @@ using UnityEngine;
 public class Tank_Movement : MonoBehaviour
 {
     public Rigidbody RB3D;
-    public CharacterController tankcontroller;
-    public Transform body;
-    public float s_body;
-    float a_body;
+  
     public float speed = 6f;
     bool left;
     bool right;
