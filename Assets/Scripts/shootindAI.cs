@@ -33,7 +33,7 @@ public class shootindAI : MonoBehaviour
 
     void Shoot()
     {
-       GameObject clone = Instantiate(projectile, barrel.position, head.rotation);
+       GameObject clone = Instantiate(projectile, barrel.position, Quaternion.identity);
         clone.GetComponent<Rigidbody>().AddForce(head.forward * force, ForceMode.Impulse);
         Destroy(clone, 5f);
     }
