@@ -12,6 +12,9 @@ public class Tank_Movement : MonoBehaviour
     bool forward;
     bool backward;
     public float force;
+    public GameObject body;
+    public float a_body;
+    public float s_body;
     
 
 
@@ -32,17 +35,19 @@ public class Tank_Movement : MonoBehaviour
         
         if (forward) RB3D.AddForce(0, 0, force * Time.deltaTime);
         else if (backward) RB3D.AddForce(0, 0, -force * Time.deltaTime);
-       /* else if (left)
+       else if (left)
         {
             a_body += s_body * Time.deltaTime;
-            a_body = Mathf.Clamp(a_body, -180, 0);
+            a_body = Mathf.Clamp(a_body, 0 , 360);
             body.transform.localRotation = Quaternion.AngleAxis(a_body, Vector3.down);
+            RB3D.AddForce(-force * Time.deltaTime, 0, 0);
         }
         else if (right)
         {
             a_body += s_body * Time.deltaTime;
-            a_body = Mathf.Clamp(a_body, 0, 180);
+            a_body = Mathf.Clamp(a_body, 0, 360);
             body.transform.localRotation = Quaternion.AngleAxis(a_body, Vector3.up);
-        }*/
+            RB3D.AddForce(force * Time.deltaTime, 0, 0);
+        }
     }
 }

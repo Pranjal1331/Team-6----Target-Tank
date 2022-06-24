@@ -123,6 +123,11 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &319457337 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1065309992408916, guid: ba92d278b2232db489e103b98f620c78, type: 3}
+  m_PrefabInstance: {fileID: 1028278305}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &452656753 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1479041959821810, guid: ba92d278b2232db489e103b98f620c78, type: 3}
@@ -143,6 +148,9 @@ MonoBehaviour:
   RB3D: {fileID: 452656759}
   speed: 5
   force: 1000
+  body: {fileID: 319457337}
+  a_body: 10
+  s_body: 20
 --- !u!4 &452656756 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4328017438092070, guid: ba92d278b2232db489e103b98f620c78, type: 3}
@@ -260,7 +268,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 533305221}
-  m_RootOrder: -1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &522421624
 MonoBehaviour:
@@ -388,7 +396,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.7777778, y: 1}
+    m_SensorSize: {x: 2.0208077, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -540,7 +548,7 @@ MonoBehaviour:
   xPos: 0
   zPos: 0
   enemyCount: 0
-  enemies_in_scene: 1
+  enemies_in_scene: 3
 --- !u!4 &773269103
 Transform:
   m_ObjectHideFlags: 0
@@ -703,7 +711,6 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 2
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1018975723769600, guid: ba92d278b2232db489e103b98f620c78, type: 3}
@@ -892,10 +899,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 54628819043788342, guid: ba92d278b2232db489e103b98f620c78, type: 3}
       propertyPath: m_Constraints
-      value: 118
+      value: 116
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: ba92d278b2232db489e103b98f620c78, type: 3}
 --- !u!4 &1196872945 stripped
 Transform:
