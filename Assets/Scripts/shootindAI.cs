@@ -8,6 +8,7 @@ public class shootindAI : MonoBehaviour
     Transform player;
     public Transform head, barrel;
     public GameObject projectile;
+    GameObject clone;
     
     public float force;
     public float Firerate, nextfire;
@@ -33,10 +34,10 @@ public class shootindAI : MonoBehaviour
 
     void Shoot()
     {
-       GameObject clone = Instantiate(projectile, barrel.position, Quaternion.identity);
-        clone.GetComponent<Rigidbody>().AddForce(head.forward * force, ForceMode.Impulse);
-        Destroy(clone, 5f);
+       clone = Instantiate(projectile, barrel.position, Quaternion.identity);
+       clone.GetComponent<Rigidbody>().AddForce(head.forward * force, ForceMode.Impulse);
+        
     }
 
-    
+   
 }

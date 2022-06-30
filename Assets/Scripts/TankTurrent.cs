@@ -21,7 +21,7 @@ public class TankTurrent : MonoBehaviour
     void Rotate_turrent()
     {
         a_turrent += Input.GetAxis("Mouse X") * s_turrent * -Time.deltaTime;
-        a_turrent = Mathf.Clamp(a_turrent, -90, 90);
+        a_turrent = Mathf.Clamp(a_turrent, -180, 180);
         turrent.localRotation = Quaternion.AngleAxis(a_turrent, Vector3.down);
     }
 
