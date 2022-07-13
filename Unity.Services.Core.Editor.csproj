@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{0DB40BB8-2E70-6223-A4C6-6715F3B967CC}</ProjectGuid>
+    <ProjectGuid>{EDA86A2B-8633-FD27-3BD4-B951FB7076F8}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Unity.Services.Core.Editor</AssemblyName>
@@ -803,39 +803,39 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Unity.Services.Core.csproj">
-      <Project>{05B25FA0-3A10-2B46-C7B2-631C824113B7}</Project>
+      <Project>{0D10A0C4-3C93-B5F8-F093-676044F5BA34}</Project>
       <Name>Unity.Services.Core</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.Services.Core.Networking.csproj">
-      <Project>{44822101-52CC-2136-2B2A-A9220DB8DC67}</Project>
+      <Project>{AE01BB87-162D-8D12-4E4C-69EF0D0EFDCD}</Project>
       <Name>Unity.Services.Core.Networking</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.Services.Core.Internal.csproj">
-      <Project>{FFDD757D-914C-C18B-7DDE-DC90CC7600B0}</Project>
+      <Project>{01EE5139-0904-7502-EFD4-D0B96EF7E331}</Project>
       <Name>Unity.Services.Core.Internal</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.Services.Core.Configuration.Editor.csproj">
-      <Project>{7E8AFFB0-36E1-FFC5-443D-C5FA2360D6B7}</Project>
+      <Project>{B4BDBD27-550D-2134-D13A-01F4B9EC164B}</Project>
       <Name>Unity.Services.Core.Configuration.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.Services.Core.Telemetry.csproj">
-      <Project>{54641F38-7236-A2C4-72D0-993A8BF61A7A}</Project>
+      <Project>{36766EE4-E53F-9942-F7DE-92E77C6F1EB4}</Project>
       <Name>Unity.Services.Core.Telemetry</Name>
     </ProjectReference>
     <ProjectReference Include="UnityEditor.UI.csproj">
-      <Project>{209557F7-16C5-81D2-9676-CC793E0D72E5}</Project>
+      <Project>{D2979437-3C04-7C1D-CD69-2F755438A445}</Project>
       <Name>UnityEditor.UI</Name>
     </ProjectReference>
     <ProjectReference Include="UnityEngine.UI.csproj">
-      <Project>{C179F366-FFD8-FDB5-EFF1-D04E672BAF93}</Project>
+      <Project>{AD0E4A7B-3409-23AF-8987-11902721083F}</Project>
       <Name>UnityEngine.UI</Name>
     </ProjectReference>
     <ProjectReference Include="UnityEngine.TestRunner.csproj">
-      <Project>{B8435A4B-9897-4487-671E-F9DF77EC9D1B}</Project>
+      <Project>{386AC2B0-8A6A-FAEE-F49E-B6FDE65DBF76}</Project>
       <Name>UnityEngine.TestRunner</Name>
     </ProjectReference>
     <ProjectReference Include="UnityEditor.TestRunner.csproj">
-      <Project>{341D6CCC-83C2-BA27-288E-C2063E8A2C17}</Project>
+      <Project>{531FBBF9-619C-766E-11E6-31D740F9CB62}</Project>
       <Name>UnityEditor.TestRunner</Name>
     </ProjectReference>
   </ItemGroup>

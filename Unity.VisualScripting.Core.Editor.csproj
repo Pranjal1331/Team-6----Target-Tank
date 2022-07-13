@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{EE2E1435-24C5-0777-D5FB-F942F0130382}</ProjectGuid>
+    <ProjectGuid>{B0A6F2BF-CC9A-0250-E218-A5DB2028255E}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Unity.VisualScripting.Core.Editor</AssemblyName>
@@ -425,8 +425,8 @@
     <Compile Include="Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Plugin\Changelogs\LegacyLudiqCore\Changelog_1_2_2.cs" />
     <Compile Include="Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Utilities\Warning.cs" />
     <Compile Include="Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Utilities\ScriptReferenceReplacement.cs" />
-    <Compile Include="Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Descriptors\DescriptorProvider.cs" />
     <Compile Include="Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Meta\DictionaryValueAtIndexMetadata.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Descriptors\DescriptorProvider.cs" />
     <Compile Include="Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Utilities\EditorSerializationUtility.cs" />
     <Compile Include="Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Properties\AssemblyInfo.cs" />
     <Compile Include="Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\ReorderableList\IReorderableListAdaptor.cs" />
@@ -510,8 +510,8 @@
     <Compile Include="Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Inspection\Unity\RectInspector.cs" />
     <Compile Include="Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Plugin\Changelogs\LegacyLudiqGraphs\Changelog_1_2_0.cs" />
     <Compile Include="Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Inspection\IndividualPropertyDrawer.cs" />
-    <Compile Include="Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Inspection\Inspector.cs" />
     <Compile Include="Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Meta\DictionaryKeyAtIndexMetadata.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Inspection\Inspector.cs" />
     <Compile Include="Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Utilities\ScriptReference.cs" />
     <Compile Include="Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Platforms\AotPreBuilder.cs" />
     <Compile Include="Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Plugin\BoltCoreConfiguration.cs" />
@@ -1199,23 +1199,23 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Unity.VisualScripting.Core.csproj">
-      <Project>{43E9D90C-002B-1C2F-41C5-AB9DCDABCC13}</Project>
+      <Project>{B84158DB-3187-6260-8677-A54F920E83F4}</Project>
       <Name>Unity.VisualScripting.Core</Name>
     </ProjectReference>
     <ProjectReference Include="UnityEditor.UI.csproj">
-      <Project>{209557F7-16C5-81D2-9676-CC793E0D72E5}</Project>
+      <Project>{D2979437-3C04-7C1D-CD69-2F755438A445}</Project>
       <Name>UnityEditor.UI</Name>
     </ProjectReference>
     <ProjectReference Include="UnityEngine.UI.csproj">
-      <Project>{C179F366-FFD8-FDB5-EFF1-D04E672BAF93}</Project>
+      <Project>{AD0E4A7B-3409-23AF-8987-11902721083F}</Project>
       <Name>UnityEngine.UI</Name>
     </ProjectReference>
     <ProjectReference Include="UnityEngine.TestRunner.csproj">
-      <Project>{B8435A4B-9897-4487-671E-F9DF77EC9D1B}</Project>
+      <Project>{386AC2B0-8A6A-FAEE-F49E-B6FDE65DBF76}</Project>
       <Name>UnityEngine.TestRunner</Name>
     </ProjectReference>
     <ProjectReference Include="UnityEditor.TestRunner.csproj">
-      <Project>{341D6CCC-83C2-BA27-288E-C2063E8A2C17}</Project>
+      <Project>{531FBBF9-619C-766E-11E6-31D740F9CB62}</Project>
       <Name>UnityEditor.TestRunner</Name>
     </ProjectReference>
   </ItemGroup>

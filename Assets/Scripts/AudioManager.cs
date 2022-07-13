@@ -21,6 +21,7 @@ public class AudioManager : MonoBehaviour
             s.source.volume = s.volume;
             s.source.pitch = s.pitch;
             s.source.loop = s.loop;
+            s.source.spatialBlend = s.spatialBlend;
 
             switch (s.audioType)
             {
@@ -38,6 +39,7 @@ public class AudioManager : MonoBehaviour
     public void Start()
     {
         Play("Theme");
+        Play("Tanktrack");
     }
     // Update is called once per frame
     public void Play(String name)

@@ -12,6 +12,7 @@ public class PauseMenu : MonoBehaviour
     public static bool Gameispaused = false;
     public GameObject PauseMenuUI;
     public Slider VOL, sfxslider;
+    public GameObject tank, proj;
 
     
      void Update()
@@ -35,8 +36,12 @@ public class PauseMenu : MonoBehaviour
     {
         PauseMenuUI.SetActive(false);
         Time.timeScale = 1f;
-       
+        tank.GetComponent<Playertankcontroller>().enabled = true;
+        tank.GetComponent<TankTurrent>().enabled = true;
+        tank.SetActive(true);
+        proj.GetComponent<Projectile>().enabled = true;
         FindObjectOfType<AudioManager>().Resume("Theme");
+        FindObjectOfType<AudioManager>().Resume("Tanktrack");
         FindObjectOfType<AudioManager>().Stop("Pausemusic"); 
         Gameispaused = false;
     }
@@ -45,9 +50,13 @@ public class PauseMenu : MonoBehaviour
     {
         PauseMenuUI.SetActive(true);
         Time.timeScale = 0f;
-        
+        tank.GetComponent<Playertankcontroller>().enabled = false;
+        tank.GetComponent<TankTurrent>().enabled = false;
+        tank.SetActive(false);
+        proj.GetComponent<Projectile>().enabled = false;
         FindObjectOfType<AudioManager>().Play("Pausemusic");
         FindObjectOfType<AudioManager>().Pause("Theme");
+        FindObjectOfType<AudioManager>().Pause("Tanktrack");
         Gameispaused = true;
         
     }

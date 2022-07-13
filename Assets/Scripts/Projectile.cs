@@ -13,14 +13,17 @@ public class Projectile : MonoBehaviour
     public GameObject Muzzleeffect;
     public GameObject obj;
     public float force = 1000f;
+    public float firerate;
+    private float nextfirerate = 0f;
     //bool hasshoot = false;
     //public GameObject system;
     void Update()
     {
         
-        if (Input.GetButtonDown("Fire1") && no_of_bullets>0)
+        if (Input.GetButton("Fire1") && no_of_bullets>0 && Time.time>=nextfirerate)
         {
-            GameObject proj = Instantiate(obj, cannon.position, Quaternion.identity);
+            nextfirerate = Time.time + 1f / firerate;
+            GameObject proj = Instantiate(obj, transform.position, cannon.rotation);
             FindObjectOfType<AudioManager>().Play(fire);
             GameObject effectmuzzle = Instantiate(Muzzleeffect, transform.position, transform.rotation);
             //hasshoot = true;
@@ -28,7 +31,7 @@ public class Projectile : MonoBehaviour
             Destroy(effectmuzzle, 1f);
             //Invoke("Stop", 3f);
             
-            proj.GetComponent<Rigidbody>().AddRelativeForce(head.forward*force, ForceMode.Impulse);
+            proj.GetComponent<Rigidbody>().AddRelativeForce(obj.transform.forward*force, ForceMode.Impulse);
             no_of_bullets--;
             if (no_of_bullets == 0)
             {

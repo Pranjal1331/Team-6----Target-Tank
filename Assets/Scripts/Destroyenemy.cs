@@ -10,6 +10,7 @@ public class Destroyenemy : MonoBehaviour
     public float damage;
     public GameObject collider1;
     public GameObject explosioneffect1, explosioneffect2;
+    //public GameObject Playertank;
     GameObject effect;
    // public GameObject bullet;
     public void OnCollisionEnter(Collision collision)

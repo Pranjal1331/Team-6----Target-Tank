@@ -35,9 +35,9 @@ public class ShootingAI : MonoBehaviour
 
     void Shoot()
     {
-        clone = Instantiate(projectile, barrel.position, Quaternion.identity);
-        GameObject eff = Instantiate(effect, barrel.transform.position, barrel.transform.rotation);
-        clone.GetComponent<Rigidbody>().AddForce(head.forward * force, ForceMode.Impulse);
+        clone = Instantiate(projectile, barrel.position, head.rotation);
+        GameObject eff = Instantiate(effect, barrel.transform.position, Quaternion.identity);
+        clone.GetComponent<Rigidbody>().AddForce(clone.transform.forward * force, ForceMode.Impulse);
         FindObjectOfType<AudioManager>().Play(sound);
         Destroy(eff, 1f);
 

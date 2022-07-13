@@ -97,7 +97,8 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000000, guid: 1808b5b757f819a469a3a668f5a7ef04,
+    type: 2}
   m_LightingSettings: {fileID: 0}
 --- !u!196 &4
 NavMeshSettings:
@@ -613,7 +614,7 @@ AudioSource:
     type: 2}
   m_audioClip: {fileID: 8300000, guid: cd12bc1eb6cf5dc44aa2e3aaeb95b5ca, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.1
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -5074,7 +5075,7 @@ Light:
   m_RenderMode: 0
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 2147483647
   m_RenderingLayerMask: 1
   m_Lightmapping: 4
   m_LightShadowCasterMode: 2
@@ -6217,6 +6218,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5481822141629038276, guid: 419b79333829cd246b8144cf46975624,
         type: 3}
+      propertyPath: m_Value
+      value: -2.26
+      objectReference: {fileID: 0}
+    - target: {fileID: 5481822141629038276, guid: 419b79333829cd246b8144cf46975624,
+        type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1137035152}
@@ -6328,7 +6334,7 @@ PrefabInstance:
     - target: {fileID: 5481822143076395742, guid: 419b79333829cd246b8144cf46975624,
         type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0.25
+      value: 0.72175
       objectReference: {fileID: 0}
     - target: {fileID: 5481822143076395742, guid: 419b79333829cd246b8144cf46975624,
         type: 3}
@@ -6338,12 +6344,12 @@ PrefabInstance:
     - target: {fileID: 5481822143076395742, guid: 419b79333829cd246b8144cf46975624,
         type: 3}
       propertyPath: m_AnchorMin.x
-      value: 0.25
+      value: 0.72175
       objectReference: {fileID: 0}
     - target: {fileID: 5481822143188712379, guid: 419b79333829cd246b8144cf46975624,
         type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0.25
+      value: 0.72175
       objectReference: {fileID: 0}
     - target: {fileID: 5481822143188712379, guid: 419b79333829cd246b8144cf46975624,
         type: 3}
